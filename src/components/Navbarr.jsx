@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext.jsx";
 
 function Navbar() {
@@ -33,31 +34,31 @@ function Navbar() {
     <header className="navbar">
       <div className="navbar-inner">
 
-        <a href="#accueil" className="navbar-logo" onClick={closeMenu}>
+        <Link to="/#accueil" className="navbar-logo" onClick={closeMenu}>
           IB
-        </a>
+        </Link>
 
         <nav className={`navbar-links ${menuOpen ? "active" : ""}`}>
-          <a href="#apropos" onClick={closeMenu}>
+          <Link to="/#apropos" onClick={closeMenu}>
             {t.about}
-          </a>
+          </Link>
 
-          <a href="#competences" onClick={closeMenu}>
+          <Link to="/#competences" onClick={closeMenu}>
             {t.skills}
-          </a>
+          </Link>
 
-          <a href="#projects" onClick={closeMenu}>
+          <Link to="/#projects" onClick={closeMenu}>
             {t.projects}
-          </a>
+          </Link>
 
-          <a href="#parcours" onClick={closeMenu}>
+          <Link to="/#parcours" onClick={closeMenu}>
             {t.journey}
-          </a>
+          </Link>
 
-          <a href="#contact" className="navbar-contact" onClick={closeMenu}>
+          <Link to="/#contact" className="navbar-contact" onClick={closeMenu}>
             {t.contact}
             <span>↗</span>
-          </a>
+          </Link>
         </nav>
 
         <div className="navbar-actions">
