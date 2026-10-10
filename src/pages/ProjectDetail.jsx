@@ -8,6 +8,7 @@ const translations = {
   fr: {
     notFound: "Projet introuvable.",
     back: "← Tous les projets",
+    backToTop: "↑ Retour en haut",
     caseStudy: "ÉTUDE DE CAS",
     github: "Explorer le repository GitHub ↗",
     problemLabel: "01 / PROBLÉMATIQUE",
@@ -25,6 +26,7 @@ const translations = {
   en: {
     notFound: "Project not found.",
     back: "← All projects",
+    backToTop: "↑ Back to top",
     caseStudy: "CASE STUDY",
     github: "Explore the GitHub repository ↗",
     problemLabel: "01 / BUSINESS CHALLENGE",
@@ -45,6 +47,14 @@ function ProjectDetail() {
   const { language } = useLanguage();
 
   const t = translations[language] ?? translations.fr;
+
+  // Fonction pour remonter en haut de la page
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   const index = projects.findIndex((p) => p.slug === slug);
   const project = projects[index];
@@ -158,6 +168,16 @@ function ProjectDetail() {
             <strong>{nextContent.title}</strong>
           </Link>
         </nav>
+
+        {/* Bouton retour en haut */}
+        <button
+          type="button"
+          className="project-back-to-top"
+          onClick={scrollToTop}
+          aria-label={t.backToTop}
+        >
+          {t.backToTop}
+        </button>
 
       </div>
     </main>

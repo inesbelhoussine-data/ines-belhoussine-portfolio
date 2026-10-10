@@ -2559,3 +2559,39 @@
     gap: 4px;
   }
 }
+
+.project-back-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  margin: 48px auto 32px;
+  padding: 14px 24px;
+
+  background: transparent;
+  color: #c4b5fd;
+  border: 1px solid rgba(196, 181, 253, 0.35);
+  border-radius: 50px;
+
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.project-back-to-top:hover {
+  background: rgba(196, 181, 253, 0.1);
+  border-color: #c4b5fd;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .project-back-to-top {
+    width: calc(100% - 32px);
+    max-width: 320px;
+    margin: 36px auto 24px;
+  }
+}
