@@ -12,7 +12,6 @@ import Hero from "./components/Hero.jsx";
 import About from "./components/About.jsx";
 import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
-import Watch from "./components/Watch.jsx";
 import Journey from "./components/Journey.jsx";
 import Contact from "./components/Contact.jsx";
 
@@ -63,7 +62,6 @@ function Home() {
       <About />
       <Skills />
       <Projects />
-      <Watch />
       <Journey />
       <Contact />
     </main>
