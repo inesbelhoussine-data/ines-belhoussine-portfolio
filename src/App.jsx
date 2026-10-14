@@ -62,6 +62,7 @@ function Home() {
       <About />
       <Skills />
       <Projects />
+
       <Journey />
       <Contact />
     </main>
