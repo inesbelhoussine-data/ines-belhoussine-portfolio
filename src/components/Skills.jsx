@@ -3,93 +3,269 @@ import { useLanguage } from "../context/LanguageContext.jsx";
 
 const translations = {
   fr: {
-    kicker: "COMPÉTENCES",
-    title1: "Une stack pensée",
-    title2: "pour la donnée.",
+    kicker: "EXPERTISE & COMPÉTENCES",
+
+    title1: "Une expertise au service",
+    title2: "de la décision.",
+
     intro:
-      "Des compétences allant de l'analyse à la visualisation, enrichies par mon expérience en développement.",
+      "Une approche transversale combinant compréhension des enjeux métiers, analyse quantitative et maîtrise des technologies pour transformer les données en informations stratégiques et recommandations opérationnelles.",
 
     groups: [
       {
         number: "01",
-        title: "Data Analysis",
+        title: "Business & Strategic Analytics",
         description:
-          "Exploration, nettoyage, analyse statistique et manipulation de données.",
-        skills: ["Python", "Pandas", "NumPy", "Matplotlib", "Statistics"],
+          "Compréhension des problématiques métiers, identification des leviers de performance et formulation de recommandations pour accompagner les décisions stratégiques et opérationnelles.",
+
+        skills: [
+          "Business Analysis",
+          "Strategic Analytics",
+          "Performance Analysis",
+          "Market Intelligence",
+          "Decision Support",
+          "Risk Analysis",
+          "Business Recommendations",
+        ],
       },
+
       {
         number: "02",
-        title: "Databases & Transformation",
+        title: "Business Intelligence & Executive Reporting",
         description:
-          "Requêtage, transformation et structuration de données.",
-        skills: ["SQL", "Snowflake", "dbt", "Data Modeling"],
+          "Conception de tableaux de bord décisionnels, définition des indicateurs clés et restitution des résultats auprès des équipes métiers et des décideurs.",
+
+        skills: [
+          "Power BI",
+          "Excel",
+          "DAX",
+          "Power Query",
+          "KPI Monitoring",
+          "Executive Reporting",
+          "Data Storytelling",
+          "Data Visualization",
+        ],
       },
+
       {
         number: "03",
-        title: "Business Intelligence",
+        title: "Financial & Operational Analytics",
         description:
-          "Création de tableaux de bord et communication d'indicateurs métier.",
-        skills: ["Power BI", "DAX", "Power Query", "Data Visualization"],
+          "Analyse des données financières et opérationnelles pour identifier les écarts, comprendre les facteurs de performance et éclairer les décisions liées aux coûts, aux ressources et à la rentabilité.",
+
+        skills: [
+          "Financial Analysis",
+          "Revenue Analysis",
+          "Budget Monitoring",
+          "Profitability Analysis",
+          "Operational Performance",
+          "Variance Analysis",
+        ],
       },
+
       {
         number: "04",
-        title: "Machine Learning",
+        title: "Data Analysis & Statistical Insights",
         description:
-          "Application de modèles supervisés et non supervisés à des problématiques data.",
-        skills: ["Scikit-learn", "Clustering", "Classification", "PCA"],
+          "Exploration et analyse approfondie des données pour identifier les tendances, détecter les anomalies, évaluer les hypothèses et produire des conclusions fiables.",
+
+        skills: [
+          "Python",
+          "Pandas",
+          "NumPy",
+          "Matplotlib",
+          "Statistics",
+          "Hypothesis Testing",
+          "Exploratory Data Analysis",
+        ],
       },
+
       {
         number: "05",
-        title: "Development",
+        title: "Analytics Engineering & Data Quality",
         description:
-          "Une culture développement qui complète mon profil Data.",
-        skills: ["Git", "GitHub", "HTML", "CSS", "JavaScript", "React"],
+          "Structuration, transformation et fiabilisation des données afin de garantir la cohérence des indicateurs et de construire des bases analytiques reproductibles.",
+
+        skills: [
+          "SQL",
+          "PostgreSQL",
+          "Snowflake",
+          "dbt",
+          "Data Modeling",
+          "Data Transformation",
+          "Data Quality",
+          "Data Warehouse",
+        ],
+      },
+
+      {
+        number: "06",
+        title: "Predictive Analytics & Machine Learning",
+        description:
+          "Application de méthodes statistiques et prédictives pour anticiper les tendances, segmenter les marchés, identifier les risques et accompagner les décisions métiers.",
+
+        skills: [
+          "Scikit-learn",
+          "Logistic Regression",
+          "Classification",
+          "K-Means",
+          "Clustering",
+          "PCA",
+          "Model Evaluation",
+          "Predictive Analytics",
+        ],
+      },
+
+      {
+        number: "07",
+        title: "Software Development & Technical Expertise",
+        description:
+          "Une culture du développement informatique permettant de comprendre les environnements techniques, collaborer avec les équipes IT et concevoir des solutions adaptées aux besoins métiers.",
+
+        skills: [
+          "Git",
+          "GitHub",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "PHP",
+          "MySQL",
+        ],
       },
     ],
   },
 
   en: {
-    kicker: "SKILLS",
-    title1: "A tech stack built",
-    title2: "around data.",
+    kicker: "EXPERTISE & SKILLS",
+
+    title1: "Expertise that drives",
+    title2: "better decisions.",
+
     intro:
-      "Skills spanning data analysis, transformation, and visualization, supported by my background in web development.",
+      "A cross-functional approach combining business understanding, quantitative analysis, and technical expertise to translate data into strategic insights and actionable recommendations.",
 
     groups: [
       {
         number: "01",
-        title: "Data Analysis",
+        title: "Business & Strategic Analytics",
         description:
-          "Data exploration, cleaning, statistical analysis, and data manipulation.",
-        skills: ["Python", "Pandas", "NumPy", "Matplotlib", "Statistics"],
+          "Understanding business challenges, identifying performance drivers, and developing actionable recommendations to support strategic and operational decision-making.",
+
+        skills: [
+          "Business Analysis",
+          "Strategic Analytics",
+          "Performance Analysis",
+          "Market Intelligence",
+          "Decision Support",
+          "Risk Analysis",
+          "Business Recommendations",
+        ],
       },
+
       {
         number: "02",
-        title: "Databases & Transformation",
+        title: "Business Intelligence & Executive Reporting",
         description:
-          "Querying, transforming, and structuring data.",
-        skills: ["SQL", "Snowflake", "dbt", "Data Modeling"],
+          "Designing executive dashboards, defining key performance indicators, and communicating analytical findings to business stakeholders and decision-makers.",
+
+        skills: [
+          "Power BI",
+          "Excel",
+          "DAX",
+          "Power Query",
+          "KPI Monitoring",
+          "Executive Reporting",
+          "Data Storytelling",
+          "Data Visualization",
+        ],
       },
+
       {
         number: "03",
-        title: "Business Intelligence",
+        title: "Financial & Operational Analytics",
         description:
-          "Building dashboards and communicating key business metrics.",
-        skills: ["Power BI", "DAX", "Power Query", "Data Visualization"],
+          "Analysing financial and operational data to identify performance deviations, understand business drivers, and inform decisions relating to costs, resources, and profitability.",
+
+        skills: [
+          "Financial Analysis",
+          "Revenue Analysis",
+          "Budget Monitoring",
+          "Profitability Analysis",
+          "Operational Performance",
+          "Variance Analysis",
+        ],
       },
+
       {
         number: "04",
-        title: "Machine Learning",
+        title: "Data Analysis & Statistical Insights",
         description:
-          "Applying supervised and unsupervised learning methods to data problems.",
-        skills: ["Scikit-learn", "Clustering", "Classification", "PCA"],
+          "Exploring and analysing complex datasets to identify trends, detect anomalies, evaluate hypotheses, and generate reliable analytical insights.",
+
+        skills: [
+          "Python",
+          "Pandas",
+          "NumPy",
+          "Matplotlib",
+          "Statistics",
+          "Hypothesis Testing",
+          "Exploratory Data Analysis",
+        ],
       },
+
       {
         number: "05",
-        title: "Development",
+        title: "Analytics Engineering & Data Quality",
         description:
-          "A web development background that complements my data skills.",
-        skills: ["Git", "GitHub", "HTML", "CSS", "JavaScript", "React"],
+          "Structuring, transforming, and improving data reliability to ensure consistent business indicators and establish reproducible analytical foundations.",
+
+        skills: [
+          "SQL",
+          "PostgreSQL",
+          "Snowflake",
+          "dbt",
+          "Data Modeling",
+          "Data Transformation",
+          "Data Quality",
+          "Data Warehouse",
+        ],
+      },
+
+      {
+        number: "06",
+        title: "Predictive Analytics & Machine Learning",
+        description:
+          "Applying statistical and predictive methods to anticipate trends, segment markets, identify risks, and support informed business decisions.",
+
+        skills: [
+          "Scikit-learn",
+          "Logistic Regression",
+          "Classification",
+          "K-Means",
+          "Clustering",
+          "PCA",
+          "Model Evaluation",
+          "Predictive Analytics",
+        ],
+      },
+
+      {
+        number: "07",
+        title: "Software Development & Technical Expertise",
+        description:
+          "A software development background that enables me to understand technical environments, collaborate with IT teams, and design solutions aligned with business requirements.",
+
+        skills: [
+          "Git",
+          "GitHub",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "PHP",
+          "MySQL",
+        ],
       },
     ],
   },
@@ -100,10 +276,16 @@ function Skills() {
   const t = translations[language] ?? translations.fr;
 
   return (
-    <section className="section skills-section" id="competences">
+    <section
+      className="section skills-section"
+      id="competences"
+    >
       <div className="container">
+
         <div className="skills-header">
+
           <div className="section-heading">
+
             <p className="section-kicker">
               <span></span>
               {t.kicker}
@@ -114,31 +296,54 @@ function Skills() {
               <br />
               <span>{t.title2}</span>
             </h2>
+
           </div>
 
           <p className="skills-header-text">
             {t.intro}
           </p>
+
         </div>
 
         <div className="skills-list">
+
           {t.groups.map((group) => (
-            <article className="skill-row" key={group.number}>
-              <span className="skill-number">{group.number}</span>
+
+            <article
+              className="skill-row"
+              key={group.number}
+            >
+
+              <span className="skill-number">
+                {group.number}
+              </span>
 
               <div className="skill-info">
+
                 <h3>{group.title}</h3>
+
                 <p>{group.description}</p>
+
               </div>
 
               <div className="skill-tags">
+
                 {group.skills.map((skill) => (
-                  <span key={skill}>{skill}</span>
+
+                  <span key={skill}>
+                    {skill}
+                  </span>
+
                 ))}
+
               </div>
+
             </article>
+
           ))}
+
         </div>
+
       </div>
     </section>
   );

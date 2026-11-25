@@ -6,92 +6,111 @@ function About() {
 
   const translations = {
     fr: {
-      kicker: "À PROPOS",
-      title1: "Comprendre la donnée.",
-      title2: "Créer de la valeur.",
+      kicker: "À PROPOS & VISION PROFESSIONNELLE",
+
+      title1: "Comprendre les enjeux.",
+      title2: "Éclairer les décisions.",
 
       intro:
-        "Data Analyst avec un parcours initial en développement web, j’aime transformer des données complexes en informations claires, structurées et utiles à la prise de décision.",
+        "À l'intersection du Business, de la Technologie et de la Data, mon ambition est de transformer l'information en un véritable levier de performance et d'aide à la décision.",
 
       paragraph1:
-        "J'ai commencé à travailler à 18 ans, et mes différentes expériences m'ont beaucoup appris, aussi bien sur le plan professionnel que personnel. J'ai toujours aimé comprendre comment les choses fonctionnent, analyser, chercher des solutions et travailler avec rigueur.",
+        "Mon parcours pluridisciplinaire en économie, commerce, développement informatique et analyse de données me permet d'aborder les problématiques d'entreprise avec une vision transversale. Au-delà de la maîtrise technique, je m'intéresse aux enjeux financiers, commerciaux, opérationnels et stratégiques qui orientent les décisions.",
 
       paragraph2:
-        "C'est pendant mon année en développement web que j'ai découvert à quel point j'aimais travailler avec les données, notamment à travers SQL et Python. J'ai alors décidé de me spécialiser en Data Analytics, un domaine qui réunit ce que j'apprécie : la logique, l'analyse et la résolution de problèmes.",
+        "Mes expériences professionnelles dans la relation client, le développement informatique et la gestion comptable au sein du secteur de l'aviation d'affaires m'ont permis de comprendre les réalités opérationnelles d'une entreprise, l'importance de la fiabilité des informations et la nécessité de disposer d'indicateurs pertinents pour piloter l'activité.",
 
       paragraph3:
-        "Aujourd'hui, j'ai envie de continuer à apprendre, de relever de nouveaux défis et de mettre mes compétences au service de projets concrets.",
+        "Aujourd'hui, en tant que Business Data Analyst, je souhaite devenir un véritable partenaire analytique des équipes métiers et de la direction. Mon rôle ne se limite pas à produire des tableaux de bord : il consiste à comprendre les problématiques, identifier les leviers de performance, anticiper les risques et formuler des recommandations concrètes pour accompagner la prise de décision.",
 
-      journey: "Découvrir mon parcours",
-      approach: "MON APPROCHE",
+      journey: "Découvrir mon parcours professionnel",
+
+      approach: "MON APPROCHE — FROM DATA TO DECISION",
 
       steps: [
         {
           title: "Comprendre",
-          description: "Identifier le besoin métier et poser les bonnes questions."
+          description:
+            "Identifier les enjeux stratégiques, comprendre les besoins des parties prenantes et définir les objectifs métiers ainsi que les indicateurs pertinents.",
         },
         {
-          title: "Structurer",
-          description: "Préparer, nettoyer et organiser les données."
+          title: "Fiabiliser",
+          description:
+            "Collecter, contrôler, nettoyer et structurer les données afin de garantir la qualité et la fiabilité des analyses.",
         },
         {
           title: "Analyser",
-          description: "Choisir les méthodes adaptées et vérifier les résultats."
+          description:
+            "Identifier les tendances, mesurer les écarts, évaluer les risques et comprendre les facteurs qui influencent la performance.",
         },
         {
-          title: "Communiquer",
-          description: "Transformer l’analyse en recommandations compréhensibles."
-        }
-      ]
+          title: "Recommander",
+          description:
+            "Transformer les résultats en enseignements clairs et en recommandations opérationnelles permettant aux décideurs de prioriser leurs actions.",
+        },
+      ],
     },
 
     en: {
-      kicker: "ABOUT ME",
-      title1: "Understanding data.",
-      title2: "Creating value.",
+      kicker: "ABOUT ME & PROFESSIONAL VISION",
+
+      title1: "Understanding business.",
+      title2: "Empowering decisions.",
 
       intro:
-        "I'm a Data Analyst with a background in web development. I enjoy turning complex data into clear, structured insights that support better decision-making.",
+        "At the intersection of Business, Technology, and Data, my ambition is to turn information into a powerful driver of business performance and informed decision-making.",
 
       paragraph1:
-        "I started working at 18, and each experience has helped me grow both professionally and personally. I've always enjoyed understanding how things work, analyzing problems, finding solutions, and approaching my work with care and attention to detail.",
+        "My multidisciplinary background in economics, business, software development, and data analytics enables me to approach business challenges from a cross-functional perspective. Beyond technical expertise, I am particularly interested in the financial, commercial, operational, and strategic factors that shape business decisions.",
 
       paragraph2:
-        "During my year studying web development, I discovered how much I enjoyed working with data, especially using SQL and Python. That's what led me to specialize in Data Analytics, a field that combines what I enjoy most: logical thinking, analysis, and problem-solving.",
+        "My professional experience in customer relations, software development, and accounting within the business aviation industry has given me valuable insight into day-to-day business operations, the importance of reliable information, and the need for meaningful performance indicators.",
 
       paragraph3:
-        "Today, I'm excited to keep learning, take on new challenges, and apply my skills to meaningful, real-world projects.",
+        "As a Business Data Analyst, my ambition is to become a trusted analytical partner to business teams and senior management. My role goes beyond building dashboards: it involves understanding business challenges, identifying performance drivers, anticipating risks, and delivering actionable recommendations that support informed decision-making.",
 
-      journey: "Explore my background",
-      approach: "MY APPROACH",
+      journey: "Explore my professional background",
+
+      approach: "MY APPROACH — FROM DATA TO DECISION",
 
       steps: [
         {
           title: "Understand",
-          description: "Identify business needs and ask the right questions."
+          description:
+            "Identify strategic challenges, understand stakeholder needs, and define relevant business objectives and performance indicators.",
         },
         {
-          title: "Structure",
-          description: "Prepare, clean, and organize data."
+          title: "Ensure Reliability",
+          description:
+            "Collect, validate, clean, and structure data to ensure the quality and reliability of analytical findings.",
         },
         {
-          title: "Analyze",
-          description: "Choose the right methods and validate the results."
+          title: "Analyse",
+          description:
+            "Identify trends, measure deviations, assess risks, and understand the underlying drivers of business performance.",
         },
         {
-          title: "Communicate",
-          description: "Turn analysis into clear, actionable recommendations."
-        }
-      ]
-    }
+          title: "Recommend",
+          description:
+            "Translate analytical findings into clear insights and actionable recommendations that help decision-makers prioritise their actions.",
+        },
+      ],
+    },
   };
 
-  const t = translations[language];
+  const t = translations[language] ?? translations.fr;
 
   return (
     <section className="section about-section" id="apropos">
+
       <div className="container">
+
+        {/* =========================
+            PROFESSIONAL VISION
+        ========================= */}
+
         <div className="section-heading">
+
           <p className="section-kicker">
             <span></span>
             {t.kicker}
@@ -102,41 +121,81 @@ function About() {
             <br />
             <span>{t.title2}</span>
           </h2>
+
         </div>
 
+        {/* =========================
+            BUSINESS VALUE PROPOSITION
+        ========================= */}
+
         <div className="about-grid">
+
           <div className="about-intro">
+
             <p className="about-big-text">
               {t.intro}
             </p>
+
           </div>
 
           <div className="about-content">
+
             <p>{t.paragraph1}</p>
+
             <p>{t.paragraph2}</p>
+
             <p>{t.paragraph3}</p>
 
             <a href="#parcours" className="text-link">
               {t.journey}
               <span>↘</span>
             </a>
+
           </div>
+
         </div>
+
+        {/* =========================
+            FROM DATA TO DECISION
+        ========================= */}
 
         <div className="approach">
-          <p className="approach-label">{t.approach}</p>
+
+          <p className="approach-label">
+            {t.approach}
+          </p>
 
           <div className="approach-steps">
+
             {t.steps.map((step, index) => (
-              <div className="approach-step" key={index}>
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <strong>{step.title}</strong>
-                <p>{step.description}</p>
+
+              <div
+                className="approach-step"
+                key={index}
+              >
+
+                <span>
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+
+                <strong>
+                  {step.title}
+                </strong>
+
+                <p>
+                  {step.description}
+                </p>
+
               </div>
+
             ))}
+
           </div>
+
         </div>
+
       </div>
+
     </section>
   );
 }

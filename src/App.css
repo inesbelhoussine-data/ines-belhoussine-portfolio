@@ -2595,3 +2595,746 @@
     margin: 36px auto 24px;
   }
 }
+
+
+/* =========================================================
+   BUSINESS CASE STUDIES — EXECUTIVE DESIGN
+========================================================= */
+
+.case-project-context {
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+
+/* =========================
+   KEY METRICS
+========================= */
+
+.case-kpi-section {
+  margin: 25px 0 65px;
+}
+
+.case-kpi-section h2 {
+  margin: 15px 0 28px;
+  color: var(--text);
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+}
+
+.case-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.case-kpi-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 180px;
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 10px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(139, 124, 255, 0.08),
+    rgba(255, 255, 255, 0.015)
+  );
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.case-kpi-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(139, 124, 255, 0.45);
+}
+
+.case-kpi-index {
+  color: #77718f;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+}
+
+.case-kpi-value {
+  display: block;
+  margin: 25px 0 10px;
+
+  color: var(--purple-light);
+
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(1.3rem, 2.4vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.055em;
+
+  overflow-wrap: anywhere;
+}
+
+.case-kpi-label {
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+/* =========================
+   BUSINESS SUMMARY
+========================= */
+
+.case-business-summary {
+  margin-top: 55px;
+  margin-bottom: 45px;
+}
+
+.case-business-summary .case-summary-card {
+  height: 100%;
+}
+
+.case-business-summary .case-summary-card p {
+  line-height: 1.85;
+}
+
+/* =========================
+   NUMBERED BUSINESS LISTS
+========================= */
+
+.case-business-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+
+  margin: 22px 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.case-business-list li {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  align-items: start;
+  gap: 12px;
+
+  padding: 15px 0;
+
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.case-business-list li:last-child {
+  border-bottom: none;
+}
+
+.case-business-list li::before {
+  display: none;
+  content: none;
+}
+
+.case-list-number {
+  color: var(--purple-light);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding-top: 3px;
+}
+
+/* =========================
+   KEY FINDINGS
+========================= */
+
+.case-findings {
+  margin-top: 45px;
+  margin-bottom: 35px;
+
+  padding: 38px;
+
+  border-left: 3px solid var(--purple);
+
+  background: linear-gradient(
+    110deg,
+    rgba(139, 124, 255, 0.07),
+    transparent
+  );
+}
+
+.case-findings p {
+  max-width: 1000px;
+  line-height: 1.85;
+}
+
+/* =========================
+   STRATEGIC RECOMMENDATIONS
+========================= */
+
+.case-strategy-section {
+  margin: 85px 0;
+}
+
+.case-strategy-heading {
+  margin-bottom: 35px;
+}
+
+.case-strategy-heading h2,
+.case-impact-heading h2,
+.case-methodology-heading h2 {
+  margin: 15px 0 20px;
+
+  color: var(--text);
+
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.045em;
+}
+
+.case-recommendations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
+
+.case-recommendation-card {
+  position: relative;
+
+  min-height: 180px;
+  padding: 28px 30px 45px;
+
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+
+  background: rgba(255, 255, 255, 0.012);
+
+  transition: background 0.3s ease;
+}
+
+.case-recommendation-card:hover {
+  background: rgba(139, 124, 255, 0.06);
+}
+
+.case-recommendation-number {
+  display: block;
+  margin-bottom: 24px;
+
+  color: var(--purple-light);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.case-recommendation-card p {
+  color: #d5d3e0;
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+.case-recommendation-arrow {
+  position: absolute;
+  right: 22px;
+  bottom: 18px;
+
+  color: var(--purple-light);
+  font-size: 1.15rem;
+}
+
+/* =========================
+   BUSINESS VALUE
+========================= */
+
+.case-impact {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: start;
+  gap: 55px;
+
+  margin: 80px 0;
+  padding: 45px;
+
+  border: 1px solid rgba(139, 124, 255, 0.23);
+  border-radius: 12px;
+
+  background: linear-gradient(
+    125deg,
+    rgba(139, 124, 255, 0.10),
+    rgba(139, 124, 255, 0.015)
+  );
+}
+
+.case-impact-heading h2 {
+  color: #c5bcff;
+}
+
+.case-impact-content {
+  padding-top: 15px;
+}
+
+.case-impact-content p {
+  color: #d4d1e1;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.case-impact-note {
+  display: block;
+  margin-top: 25px;
+
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+/* =========================
+   ANALYTICAL METHODOLOGY
+========================= */
+
+.case-methodology {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 65px;
+
+  margin: 80px 0;
+  padding: 50px 0;
+
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.case-methodology .case-business-list {
+  margin-top: 0;
+}
+
+.case-methodology-heading .case-tags {
+  margin-top: 25px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1000px) {
+
+  .case-kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-recommendations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-impact,
+  .case-methodology {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .case-kpi-section {
+    margin-bottom: 45px;
+  }
+
+  .case-kpi-grid {
+    gap: 10px;
+  }
+
+  .case-kpi-card {
+    min-height: 145px;
+    padding: 17px;
+  }
+
+  .case-kpi-value {
+    font-size: 1.5rem;
+  }
+
+  .case-kpi-label {
+    font-size: 0.75rem;
+  }
+
+  .case-recommendations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-recommendation-card {
+    min-height: 145px;
+    padding: 24px 24px 40px;
+  }
+
+  .case-findings,
+  .case-impact {
+    padding: 25px;
+  }
+
+  .case-strategy-section,
+  .case-impact,
+  .case-methodology {
+    margin: 50px 0;
+  }
+
+}
+
+
+/* =========================================================
+   JOURNEY — BUSINESS POSITIONING
+========================================================= */
+
+.trajectory span {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.5;
+}
+
+.trajectory .trajectory-active {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+}
+
+.timeline-description {
+  line-height: 1.85;
+}
+
+.timeline-top {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.timeline-tags {
+  flex-wrap: wrap;
+}
+
+.current-badge {
+  white-space: normal;
+}
+
+@media (max-width: 600px) {
+  .trajectory .trajectory-active {
+    font-size: 0.75rem;
+  }
+}
+
+
+/* =========================================================
+   PROJECTS — BUSINESS CASE STUDIES
+========================================================= */
+
+/* =========================
+   REAL PROJECT VISUALS
+========================= */
+
+.project-real-visual {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 340px;
+  padding: 35px;
+
+  background: linear-gradient(
+    145deg,
+    #151326,
+    #090a12
+  );
+}
+
+.project-real-visual .visual-grid {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.project-preview-image {
+  display: block;
+
+  width: 100%;
+  max-height: 340px;
+
+  object-fit: contain;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-preview-image {
+  transform: scale(1.025);
+}
+
+.project-visual-caption {
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+}
+
+.project-real-visual .visual-project-number {
+  z-index: 2;
+}
+
+.project-visual-fallback {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  text-align: center;
+}
+
+.project-visual-fallback span {
+  color: #b2a8ff;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+}
+
+.project-visual-fallback strong {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+/* =========================
+   BUSINESS DESCRIPTION
+========================= */
+
+.project-business-description {
+  margin-top: 18px;
+}
+
+.project-business-label {
+  display: block;
+  margin-bottom: 10px;
+
+  color: #b2a8ff;
+
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+}
+
+.project-business-description p {
+  line-height: 1.8;
+}
+
+/* =========================
+   PROJECT KEY METRICS
+========================= */
+
+.project-metrics {
+  margin: 25px 0;
+  padding: 20px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.project-metrics-heading {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: #9994b0;
+
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+}
+
+.project-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+.project-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  min-width: 0;
+}
+
+.project-metric strong {
+  color: #b2a8ff;
+
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(1.2rem, 2vw, 1.9rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+
+  overflow-wrap: anywhere;
+}
+
+.project-metric span {
+  color: #aaa8bb;
+
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+/* =========================
+   PROJECT LINKS
+========================= */
+
+.project-links {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-links .project-study-link {
+  color: #b2a8ff;
+  font-weight: 600;
+}
+
+.project-tags {
+  flex-wrap: wrap;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1000px) {
+
+  .project-real-visual {
+    min-height: 280px;
+    padding: 25px;
+  }
+
+  .project-preview-image {
+    max-height: 280px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .project-real-visual {
+    min-height: 230px;
+    padding: 20px;
+  }
+
+  .project-preview-image {
+    max-height: 210px;
+  }
+
+  .project-metrics-grid {
+    gap: 15px;
+  }
+
+  .project-metric strong {
+    font-size: 1.35rem;
+  }
+
+  .project-metric span {
+    font-size: 0.7rem;
+  }
+
+  .project-visual-caption {
+    font-size: 0.55rem;
+    left: 12px;
+    bottom: 10px;
+  }
+
+}
+
+/* =========================================================
+   CONTACT — PROFESSIONAL POSITIONING
+========================================================= */
+
+.contact-professional-focus {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  margin-top: 24px;
+  margin-bottom: 28px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-copy .contact-target-roles {
+  color: #b2a8ff;
+
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.contact-copy .contact-mobility {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #aaa8bb;
+
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.contact-mobility span {
+  color: #b2a8ff;
+  font-size: 0.6rem;
+}
+
+.contact-email {
+  overflow-wrap: anywhere;
+}
+
+.contact-title h2 {
+  overflow-wrap: anywhere;
+}
+
+.footer-role {
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+
+  .contact-professional-focus {
+    margin-top: 18px;
+    margin-bottom: 22px;
+  }
+
+  .contact-copy .contact-target-roles {
+    font-size: 0.8rem;
+  }
+
+  .footer-role {
+    font-size: 0.65rem;
+  }
+
+}

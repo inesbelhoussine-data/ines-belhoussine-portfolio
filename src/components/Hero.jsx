@@ -6,45 +6,92 @@ function Hero() {
 
   const translations = {
     fr: {
-      welcome: "BIENVENUE, JE SUIS",
+      welcome: "BUSINESS · TECHNOLOGY · DATA",
+
+      headline:
+        "Transformer les données en décisions stratégiques.",
+
       description:
-        "Curieuse de nature, j'aime comprendre, analyser et donner du sens aux données. Après un parcours en développement web, j'ai choisi de me spécialiser dans la Data, un domaine où je peux allier logique, rigueur et créativité.",
+        "Business Data Analyst, je combine expertise analytique, compréhension des enjeux métiers et compétences technologiques pour transformer des données complexes en recommandations concrètes. Mon objectif : accompagner les décideurs dans le pilotage de la performance, l'identification des opportunités de croissance et la maîtrise des risques.",
+
       location:
-        "Basée en France · Mobile en France et à l'international",
-      projects: "Découvrir mes projets",
+        "Basée en France · Mobilité nationale et internationale",
+
+      projects: "Explorer mes études de cas",
       contact: "Me contacter",
       available: "Disponible",
-      completedProjects: "projets data réalisés",
-      mainStack: "stack principale",
-      career: "évolution professionnelle",
-      opportunities: "ouverte aux opportunités"
+
+      cardLabel: "BUSINESS INTELLIGENCE",
+      cardTitle: "Decision Support",
+
+      performance: "Performance",
+      growth: "Croissance",
+      risk: "Risques",
+
+      completedProjects: "projets analytiques réalisés",
+
+      businessTitle: "Business Intelligence",
+      businessLabel: "pilotage de la performance",
+
+      strategyTitle: "Strategic Analytics",
+      strategyLabel: "aide à la décision",
+
+      opportunities: "mobilité professionnelle",
     },
+
     en: {
-      welcome: "HI, I'M",
+      welcome: "BUSINESS · TECHNOLOGY · DATA",
+
+      headline:
+        "Turning data into strategic decisions.",
+
       description:
-        "I'm naturally curious and enjoy exploring data, understanding how things work, and finding meaningful insights. With a background in web development, I decided to specialize in Data Analytics, a field that brings together my interest in logic, problem-solving, and creativity.",
+        "As a Business Data Analyst, I combine analytical expertise, business understanding, and technical skills to translate complex data into actionable recommendations. My objective is to support decision-makers in driving performance, identifying growth opportunities, and mitigating business risks.",
+
       location:
-        "Based in France · Open to opportunities in France and internationally",
-      projects: "Explore my projects",
+        "Based in France · Open to national and international opportunities",
+
+      projects: "Explore my case studies",
       contact: "Get in touch",
       available: "Open to work",
-      completedProjects: "data projects completed",
-      mainStack: "core tech stack",
-      career: "career direction",
-      opportunities: "open to opportunities"
-    }
+
+      cardLabel: "BUSINESS INTELLIGENCE",
+      cardTitle: "Decision Support",
+
+      performance: "Performance",
+      growth: "Growth",
+      risk: "Risk",
+
+      completedProjects: "analytical projects completed",
+
+      businessTitle: "Business Intelligence",
+      businessLabel: "performance management",
+
+      strategyTitle: "Strategic Analytics",
+      strategyLabel: "strategic decision support",
+
+      opportunities: "international mobility",
+    },
   };
 
-  const t = translations[language];
+  const t = translations[language] ?? translations.fr;
 
   return (
     <section className="hero" id="accueil">
+
       <div className="hero-glow hero-glow-one"></div>
       <div className="hero-glow hero-glow-two"></div>
 
       <div className="container hero-content">
+
         <div className="hero-main">
+
+          {/* =========================
+              PROFESSIONAL POSITIONING
+          ========================= */}
+
           <div className="hero-text">
+
             <p className="eyebrow">
               <span></span>
               {t.welcome}
@@ -55,7 +102,11 @@ function Hero() {
               <span>Belhoussine</span>
             </h1>
 
-            <h2>Data Analyst</h2>
+            <h2>Business Data Analyst</h2>
+
+            <p className="hero-business-headline">
+              {t.headline}
+            </p>
 
             <p className="hero-description">
               {t.description}
@@ -65,18 +116,35 @@ function Hero() {
               <span>●</span> {t.location}
             </p>
 
+            {/* =========================
+                CALL TO ACTION
+            ========================= */}
+
             <div className="hero-actions">
-              <a href="#projects" className="button button-primary">
+
+              <a
+                href="#projects"
+                className="button button-primary"
+              >
                 {t.projects}
                 <span>→</span>
               </a>
 
-              <a href="#contact" className="button button-secondary">
+              <a
+                href="#contact"
+                className="button button-secondary"
+              >
                 {t.contact}
               </a>
+
             </div>
 
+            {/* =========================
+                PROFESSIONAL NETWORKS
+            ========================= */}
+
             <div className="social-links">
+
               <a
                 href="https://www.linkedin.com/in/ines-belhoussine/"
                 aria-label="LinkedIn"
@@ -101,30 +169,45 @@ function Hero() {
               >
                 @
               </a>
+
             </div>
+
           </div>
 
+          {/* =========================
+              BUSINESS ANALYTICS VISUAL
+          ========================= */}
+
           <div className="hero-visual">
+
             <div className="visual-orbit orbit-one"></div>
             <div className="visual-orbit orbit-two"></div>
 
             <div className="data-card">
+
               <div className="data-card-top">
+
                 <div>
-                  <span className="tiny-label">DATA / ANALYTICS</span>
-                  <strong>Portfolio 2026</strong>
+                  <span className="tiny-label">
+                    {t.cardLabel}
+                  </span>
+
+                  <strong>{t.cardTitle}</strong>
                 </div>
 
                 <span className="status">
                   <i></i>
                   {t.available}
                 </span>
+
               </div>
 
-              <div className="fake-chart">
+              <div className="fake-chart" aria-hidden="true">
+
                 <div className="chart-line"></div>
 
                 <div className="chart-bars">
+
                   <span style={{ height: "35%" }}></span>
                   <span style={{ height: "58%" }}></span>
                   <span style={{ height: "45%" }}></span>
@@ -132,51 +215,66 @@ function Hero() {
                   <span style={{ height: "62%" }}></span>
                   <span style={{ height: "92%" }}></span>
                   <span style={{ height: "73%" }}></span>
+
                 </div>
+
               </div>
 
               <div className="data-stats">
+
                 <div>
-                  <span>STACK</span>
-                  <strong>Python · SQL</strong>
+                  <span>BUSINESS</span>
+                  <strong>{t.performance}</strong>
                 </div>
 
                 <div>
-                  <span>BI</span>
-                  <strong>Power BI</strong>
+                  <span>STRATEGY</span>
+                  <strong>{t.growth}</strong>
                 </div>
 
                 <div>
-                  <span>FOCUS</span>
-                  <strong>Data</strong>
+                  <span>MANAGEMENT</span>
+                  <strong>{t.risk}</strong>
                 </div>
+
               </div>
+
             </div>
+
           </div>
+
         </div>
 
+        {/* =========================
+            KEY PROFESSIONAL STRENGTHS
+        ========================= */}
+
         <div className="hero-bottom">
+
           <div>
             <strong>7+</strong>
             <span>{t.completedProjects}</span>
           </div>
 
           <div>
-            <strong>Python · SQL · Power BI</strong>
-            <span>{t.mainStack}</span>
+            <strong>{t.businessTitle}</strong>
+            <span>{t.businessLabel}</span>
           </div>
 
           <div>
-            <strong>Analytics → Engineering</strong>
-            <span>{t.career}</span>
+            <strong>{t.strategyTitle}</strong>
+            <span>{t.strategyLabel}</span>
           </div>
 
           <div>
             <strong>France · International</strong>
             <span>{t.opportunities}</span>
           </div>
+
         </div>
+
       </div>
+
     </section>
   );
 }
