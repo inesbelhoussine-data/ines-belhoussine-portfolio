@@ -533,7 +533,7 @@ export const projectDetails = {
 
 
 "ecommerce-profitability": {
-  cover: "/images/projects/data_projet5/bottleneckkk_portofolio.png",
+  cover: "/images/projects/data_projet5/bottleneckkk_portoflio.png",
 
   fr: {
     problem:
